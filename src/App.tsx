@@ -31,7 +31,7 @@ function App() {
 
 	const deleteTodo = (i: number) => {
 		setTodos(prev => {
-			const updatedTasks = prev.filter((todo, _i) => _i !== i)
+			const updatedTasks = prev.filter((_, _i) => _i !== i)
 			localStorage.setItem('todos', JSON.stringify(updatedTasks))
 			return updatedTasks
 		})

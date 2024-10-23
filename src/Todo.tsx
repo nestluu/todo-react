@@ -14,8 +14,12 @@ export const Todo: React.FC<Props> = ({
 	deleteTodo,
 	toggleComplete,
 }) => {
+	const done = !!todo.done
 	return (
-		<div className={!!todo.done ? `${s.todo} ${s.complete}` : `${s.todo}`}>
+		<div
+			// style={{ backgroundColor: todo.done ? 'rgb(235, 235, 235)' : 'white' }}
+			className={`${s.todo} ${done ? s.complete : ''}`}
+		>
 			<div className='div'>{`${i + 1}. ${todo.text}`}</div>
 			<div className={s.right}>
 				<img
