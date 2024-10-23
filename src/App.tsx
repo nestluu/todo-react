@@ -1,14 +1,22 @@
 import { useEffect, useState } from 'react'
 import s from './App.module.scss'
-import { Todo } from './Item'
+import { Todo } from './Todo'
+
+export interface ITodo {
+	text: string
+	done: boolean
+}
 
 function App() {
-	const [todos, setTodos] = useState([])
+	const [todos, setTodos] = useState<ITodo[]>([])
 	const [text, setText] = useState('')
 
 	useEffect(() => {
 		if (localStorage.getItem('todos')) {
-			setTodos(JSON.parse(localStorage.getItem('todos')))
+			const storedTodos = localStorage.getItem('todos')
+			if (storedTodos) {
+				setTodos(JSON.parse(storedTodos))
+			}
 		}
 	}, [])
 
@@ -21,7 +29,7 @@ function App() {
 		setText('')
 	}
 
-	const deleteTodo = i => {
+	const deleteTodo = (i: number) => {
 		setTodos(prev => {
 			const updatedTasks = prev.filter((todo, _i) => _i !== i)
 			localStorage.setItem('todos', JSON.stringify(updatedTasks))
@@ -29,7 +37,7 @@ function App() {
 		})
 	}
 
-	const toggleComplete = i => {
+	const toggleComplete = (i: number) => {
 		setTodos(prev => {
 			const updatedTasks = prev.map((todo, idx) =>
 				idx === i ? { ...todo, done: !todo.done } : todo
