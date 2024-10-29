@@ -10,7 +10,7 @@ const LoginPage: React.FC = () => {
 	const handleLogin = () => {
 		if (username === 'admin' && password === 'admin') {
 			localStorage.setItem('loggedIn', 'true')
-			navigate('/home')
+			navigate('/todo-react/home')
 		} else {
 			alert('Invalid credentials')
 		}

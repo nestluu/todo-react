@@ -8,7 +8,7 @@ import { store } from './store/store'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<HashRouter basename='/todo-react'>
+		<HashRouter>
 			<Provider store={store}>
 				<App />
 			</Provider>
