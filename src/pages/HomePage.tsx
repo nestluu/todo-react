@@ -20,7 +20,7 @@ export const HomePage: React.FC = () => {
 
 	useEffect(() => {
 		if (localStorage.getItem('loggedIn') === 'false') {
-			navigate('/todo-react/')
+			navigate('/todo-react')
 		}
 	}, [navigate])
 
@@ -33,7 +33,7 @@ export const HomePage: React.FC = () => {
 
 	const handleLogout = () => {
 		localStorage.setItem('loggedIn', 'false')
-		navigate('/todo-react/')
+		navigate('/todo-react')
 	}
 
 	const filteredTodos = todos.filter(todo => {
