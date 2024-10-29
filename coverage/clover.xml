@@ -1,65 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729686040008" clover="3.2.0">
-  <project timestamp="1729686040009" name="All files">
-    <metrics statements="47" coveredstatements="42" conditionals="8" coveredconditionals="7" methods="18" coveredmethods="18" elements="73" coveredelements="67" complexity="0" loc="47" ncloc="47" packages="1" files="4" classes="4"/>
-    <file name="App.tsx" path="C:\Users\user\Desktop\todo-react\src\App.tsx">
-      <metrics statements="36" coveredstatements="36" conditionals="6" coveredconditionals="5" methods="15" coveredmethods="15"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="11" count="18" type="stmt"/>
-      <line num="12" count="18" type="stmt"/>
-      <line num="14" count="18" type="stmt"/>
-      <line num="15" count="5" type="cond" truecount="1" falsecount="0"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="23" count="18" type="stmt"/>
-      <line num="24" count="4" type="stmt"/>
-      <line num="25" count="4" type="stmt"/>
-      <line num="26" count="4" type="stmt"/>
-      <line num="27" count="4" type="stmt"/>
-      <line num="29" count="4" type="stmt"/>
-      <line num="32" count="18" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
-      <line num="40" count="18" type="stmt"/>
-      <line num="41" count="2" type="stmt"/>
-      <line num="42" count="2" type="stmt"/>
-      <line num="43" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="45" count="2" type="stmt"/>
-      <line num="46" count="2" type="stmt"/>
-      <line num="50" count="18" type="stmt"/>
-      <line num="51" count="1" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
-      <line num="54" count="1" type="stmt"/>
-      <line num="58" count="18" type="stmt"/>
-      <line num="65" count="8" type="stmt"/>
-      <line num="82" count="4" type="stmt"/>
-      <line num="101" count="1" type="stmt"/>
-    </file>
-    <file name="Todo.tsx" path="C:\Users\user\Desktop\todo-react\src\Todo.tsx">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="17" count="8" type="stmt"/>
-      <line num="18" count="8" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-    </file>
-    <file name="main.tsx" path="C:\Users\user\Desktop\todo-react\src\main.tsx">
-      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <line num="1" count="0" type="stmt"/>
-      <line num="2" count="0" type="stmt"/>
-      <line num="3" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
-    </file>
-    <file name="vite-env.d.ts" path="C:\Users\user\Desktop\todo-react\src\vite-env.d.ts">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-    </file>
+<coverage generated="1730225493298" clover="3.2.0">
+  <project timestamp="1730225493298" name="All files">
+    <metrics statements="105" coveredstatements="20" conditionals="37" coveredconditionals="2" methods="38" coveredmethods="1" elements="180" coveredelements="23" complexity="0" loc="105" ncloc="105" packages="5" files="9" classes="9"/>
+    <package name="src">
+      <metrics statements="23" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="App.tsx" path="C:\Users\user\Desktop\todo-react\src\App.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="Todo.tsx" path="C:\Users\user\Desktop\todo-react\src\Todo.tsx">
+        <metrics statements="9" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="C:\Users\user\Desktop\todo-react\src\main.tsx">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="vite-env.d.ts" path="C:\Users\user\Desktop\todo-react\src\vite-env.d.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="redux.ts" path="C:\Users\user\Desktop\todo-react\src\hooks\redux.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="57" coveredstatements="8" conditionals="29" coveredconditionals="0" methods="23" coveredmethods="1"/>
+      <file name="HomePage.tsx" path="C:\Users\user\Desktop\todo-react\src\pages\HomePage.tsx">
+        <metrics statements="41" coveredstatements="8" conditionals="25" coveredconditionals="0" methods="19" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+      </file>
+      <file name="LoginPage.tsx" path="C:\Users\user\Desktop\todo-react\src\pages\LoginPage.tsx">
+        <metrics statements="16" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="store.ts" path="C:\Users\user\Desktop\todo-react\src\store\store.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store.todos">
+      <metrics statements="19" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="10" coveredmethods="0"/>
+      <file name="todoSlice.ts" path="C:\Users\user\Desktop\todo-react\src\store\todos\todoSlice.ts">
+        <metrics statements="19" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="10" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

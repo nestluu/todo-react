@@ -1,35 +1,29 @@
-import { ITodo } from './App'
 import s from './App.module.scss'
+import { useAppDispatch } from './hooks/redux'
+import { ITodo } from './interfaces/interfaces'
+import { deleteTodo, toggleComplete } from './store/todos/todoSlice'
 
 interface Props {
 	todo: ITodo
 	i: number
-	deleteTodo: (i: number) => void
-	toggleComplete: (i: number) => void
 }
 
-export const Todo: React.FC<Props> = ({
-	todo,
-	i,
-	deleteTodo,
-	toggleComplete,
-}) => {
+export const Todo: React.FC<Props> = ({ todo, i }) => {
+	const dispatch = useAppDispatch()
 	const done = !!todo.done
+
 	return (
-		<div
-			// style={{ backgroundColor: todo.done ? 'rgb(235, 235, 235)' : 'white' }}
-			className={`${s.todo} ${done ? s.complete : ''}`}
-		>
+		<div className={`${s.todo} ${done ? s.complete : ''}`}>
 			<div className='div'>{`${i + 1}. ${todo.text}`}</div>
 			<div className={s.right}>
 				<img
-					onClick={() => toggleComplete(i)}
+					onClick={() => dispatch(toggleComplete(todo.id))}
 					width='20px'
 					src='./complite.png'
 					alt='complete'
 				/>
 				<img
-					onClick={() => deleteTodo(i)}
+					onClick={() => dispatch(deleteTodo(todo.id))}
 					width='20px'
 					src='./delete.png'
 					alt='delete'

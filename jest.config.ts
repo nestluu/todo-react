@@ -6,10 +6,10 @@ const config: Config = {
 	collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
 	coverageDirectory: 'coverage',
 	testEnvironment: 'jsdom',
-	setupFilesAfterEnv: ['<rootDir>/setup-tests.js'],
+	setupFilesAfterEnv: ['<rootDir>/setup-tests.ts'],
 	transform: {
-		'^.+\\.tsx?$': 'ts-jest', // Используем ts-jest для TypeScript файлов
-		'^.+\\.js$': 'babel-jest', // Используем babel-jest для JavaScript файлов
+		'^.+\\.tsx?$': 'ts-jest',
+		'^.+\\.js$': 'babel-jest',
 	},
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 	transformIgnorePatterns: ['<rootDir>/node_modules/'],
